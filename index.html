@@ -3,121 +3,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Page Example</title>
+    <title>Aux Guides Baigneurs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <style>
-        /* General styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
+       /* General styles */
+       body {
+
+           margin: 0;
+           padding: 0;
+           line-height: 1.6;
+           font-family: 'Roboto', sans-serif; /* Use the modern font */
+           color: #555; /* Softer dark gray */
+           background-color: #f9f9f9; /* Light background for a modern feel */
+       }
+
+       /* Header styles */
+       header {
+           text-align: center;
+           padding: 20px;
+           background-color: white;
+           border-bottom: 1px solid #ddd;
+       }
+
+       header img {
+           max-width: 500px;
+           height: auto;
+       }
+
+       header nav {
+          margin-top: 10px;
+      }
+
+      header nav a {
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 1em;
+        color: #333;
+        font-weight: 500;
+        transition: color 0.3s, text-decoration 0.3s;
+      }
+
+        header nav a:hover {
+            color: #007bff;
         }
 
-        /* Header styles */
-        header {
-            text-align: center;
-            padding: 20px;
-            background-color: #f4f4f4;
-            border-bottom: 1px solid #ddd;
+        header nav a.active {
+            text-decoration: underline;
+            font-weight: bold;
+            color: #007bff;
         }
 
-        header img {
-            max-width: 150px;
-            height: auto;
-        }
+       /* Main content styles */
+       .content {
+           padding: 20px;
+           display: grid;
+           gap: 20px;
+           max-width: 800px;
+           margin: 0 auto;
+       }
 
-        /* Main content styles */
-        .content {
-            padding: 20px;
-            display: grid;
-            gap: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
+       .headline p {
+         text-align: center;
+          font-size: 1.3em;
+       }
 
         .section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            text-align: center; /* Centers the block */
         }
 
         .section img {
-            max-width: 100%;
+            max-width: 500px;
+            width: 100%;
             height: auto;
-            border-radius: 8px;
+            margin: 0 auto;
+            display: block;
         }
 
         .section p {
-            margin: 10px 0;
-            text-align: center;
+            margin: 10px auto;
+            width: 600px; /* Matches the image width */
+            text-align: left; /* Left-aligns the text within the centered block */
+            padding: 20px;
         }
 
-        /* Footer styles */
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #f4f4f4;
-            border-top: 1px solid #ddd;
-        }
 
-        footer p {
-            margin: 5px 0;
-            font-size: 0.9em;
-        }
+       /* Footer styles */
+      footer {
+          background-color: .white;
+          border-top: 1px solid #ddd;
+          padding: 40px;
+      }
 
-        /* Responsive design for larger screens */
-        @media (min-width: 768px) {
-            .section {
-                flex-direction: row;
-                align-items: flex-start;
-            }
+      .footer-container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          max-width: 800px;
+          margin: 0 auto;
+      }
 
-            .section img {
-                max-width: 40%;
-                margin-right: 20px;
-            }
+      .footer-container img {
+          max-width: 170px; /* Adjust size as needed */
+          height: auto;
+          margin-right: 20px;
+      }
 
-            .section p {
-                text-align: left;
-            }
-        }
-    </style>
+      .footer-text {
+          text-align: left;
+      }
+
+      .footer-text p {
+          margin: 5px 0;
+          color: #666;
+          font-size: 0.9em;
+      }
+   </style>
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Logo">
+        <img src="images/logo.png" alt="Logo">
+        <nav>
+          <a href="index.html" class="active">Accueil</a>
+          <a href="contact.html">Contact</a>
+    </nav>
     </header>
 
     <main class="content">
+
+        <div class="headline">
+            <p>Une collection unique sur le thème de Biarritz, le surf et son patrimoine maritime.</p>
+        </div>
+
         <div class="section">
-            <img src="image1.jpg" alt="Description of Image 1">
-            <p>Here is some text describing the first image. This text provides context and explanation for the image shown.</p>
+            <img src="images/agb_interieur_1.png" alt="Aux Guides Baigneurs - la boutique">
+            <p>Sur le Quai de la Grande Plage à Biarritz, les pieds dans l'eau, la boutique Aux Guides Baigneurs existe depuis 1994.<br><br>
+
+C'est une entreprise familiale avec l'objectif d'être au service des promeneurs, des baigneurs, touristes, surfeurs, enfants, etc.,  de la Grande Plage.<br><br>
+
+Eté comme hiver, nous vous équiperons face aux aléas du beau climat basque, des tongs en janvier ou d'un pull en juillet…</p>
         </div>
         <div class="section">
-            <img src="image2.jpg" alt="Description of Image 2">
-            <p>Another section with more text, providing details about this image.</p>
+            <img src="images/agb_interieur_0.png" alt="Aux Guides Baigneurs - la boutique">
+            <p> Notre offre privilégie des marques locales et fabriquées en Europe dans tous nos rayons, nous proposons tout ce dont vous aurez besoin pour passer un bon moment sur la Grande Plage et en emporter un bon souvenir.
+</p>
+        </div>
+
+  <div class="section">
+        <p>L'histoire des Guides Baigneurs Sauveteurs de la Grande Plage.</p>
+      </div>
+        <div class="section">
+            <img src="images/history_agb_1.png" alt="Aux Guides Baigneurs - histoire de la boutique">
+            <p>Les Guides Baigneurs étaient des pêcheurs pour la plupart.<br><br>
+
+            Face à la popularisation des bains de mer, dans un premier temps, à des fins thérapeutiques puis ludique et sportive certains pêcheurs voyant les risques de noyades augmenter ont décidé de former une association dont le but est de sécuriser les plages de Biarritz sur le modèle des Guides de Hautes Montagnes de Chamonix.</p>
         </div>
         <div class="section">
-            <img src="image3.jpg" alt="Description of Image 3">
-            <p>This is the third image, with accompanying text that elaborates on the topic.</p>
+            <img src="images/history_agb_4.png" alt="Aux Guides Baigneurs - histoire de la boutique">
+            <p>Cette photo fut prise à la Grande Plage au début du 20ieme siècle, c'est la première équipe de sauveteurs, on reconnait à droite le fameux Carcabueno.</p>
         </div>
         <div class="section">
-            <img src="image4.jpg" alt="Description of Image 4">
-            <p>Some additional description text that goes with the fourth image.</p>
+            <img src="images/history_agb_2.png" alt="Aux Guides Baigneurs - histoire de la boutique">
+            <p>Le travail de pêcheur côtier avait rendu ces hommes expert dans le maniement de la barque qu'ils utilisent pour sécuriser les plages.</p>
         </div>
+
         <div class="section">
-            <img src="image5.jpg" alt="Description of Image 5">
-            <p>Text describing the fifth image, helping to narrate the story or idea.</p>
-        </div>
-        <div class="section">
-            <img src="image6.jpg" alt="Description of Image 6">
-            <p>Finally, some details about the sixth and final image in the series.</p>
-        </div>
+            <img src="images/history_agb_3.png" alt="Aux Guides Baigneurs - histoire de la boutique">
+        <p>Le canon à amarre était aussi au cœur de leur technique de sauvetage tirant un filin sur lequel ils pouvaient se retenir face au courant et aux vagues.
+
+        Notre magasin se trouve exactement à l'emplacement de l'ancien établissement des bains où les Guides et leurs clients se préparaient pour le bain.
+
+        C'est pourquoi, en hommage à ces hommes et à l'histoire de Biarritz nous avons décidé d'appeler notre boutique AUX GUIDES BAIGNEURS.</p>
+          </div>
     </main>
 
     <footer>
-        <p>&copy; 2025 Your Website Name. All rights reserved.</p>
-        <p>Contact: yourname@example.com</p>
+    <div class="footer-container">
+        <img src="images/blason-agb.png" alt="Footer Image">
+
+        <div class="footer-text">
+          <p>Boutique</p>
+
+          <p>Aux Guides Baigneurs</p>
+
+          <p>Quai de la Grande Plage 64200 Biarritz.</p>
+
+          <p>De 10h à 20h.</p>
+
+          <p>&copy; 2025 Aux-Guides-Baigneurs.com. Tous droits réservés.</p>
+        </div>
+      </div>
     </footer>
+
 </body>
 </html>
