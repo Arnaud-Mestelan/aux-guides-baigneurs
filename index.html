@@ -3,10 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Website</title>
+    <title>Responsive Page Example</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Header styles */
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        /* Main content styles */
+        .content {
+            padding: 20px;
+            display: grid;
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .section p {
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border-top: 1px solid #ddd;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 0.9em;
+        }
+
+        /* Responsive design for larger screens */
+        @media (min-width: 768px) {
+            .section {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+
+            .section img {
+                max-width: 40%;
+                margin-right: 20px;
+            }
+
+            .section p {
+                text-align: left;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Website!</h1>
-    <p>This is a simple site.</p>
+    <header>
+        <img src="logo.png" alt="Logo">
+    </header>
+
+    <main class="content">
+        <div class="section">
+            <img src="image1.jpg" alt="Description of Image 1">
+            <p>Here is some text describing the first image. This text provides context and explanation for the image shown.</p>
+        </div>
+        <div class="section">
+            <img src="image2.jpg" alt="Description of Image 2">
+            <p>Another section with more text, providing details about this image.</p>
+        </div>
+        <div class="section">
+            <img src="image3.jpg" alt="Description of Image 3">
+            <p>This is the third image, with accompanying text that elaborates on the topic.</p>
+        </div>
+        <div class="section">
+            <img src="image4.jpg" alt="Description of Image 4">
+            <p>Some additional description text that goes with the fourth image.</p>
+        </div>
+        <div class="section">
+            <img src="image5.jpg" alt="Description of Image 5">
+            <p>Text describing the fifth image, helping to narrate the story or idea.</p>
+        </div>
+        <div class="section">
+            <img src="image6.jpg" alt="Description of Image 6">
+            <p>Finally, some details about the sixth and final image in the series.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Your Website Name. All rights reserved.</p>
+        <p>Contact: yourname@example.com</p>
+    </footer>
 </body>
 </html>
