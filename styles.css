@@ -77,20 +77,42 @@
 
     .section p {
         margin: 10px auto;
-        width: 600px; /* Matches the image width */
+        /*width: 600px;*/ /* Matches the image width */
         text-align: left; /* Left-aligns the text within the centered block */
         padding: 20px;
+
+        width: 100%; /* Ensures text blocks expand properly */
+  max-width: 600px; /* Prevents them from being too wide */
+  text-align: left; /* Ensures text is aligned correctly */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     /* Main content styling for contact page */
     main {
         max-width: 800px; /* Limit the width of the content */
+        width: 90%;  /* Prevents being too narrow on small screens */
         margin: 40px auto; /* Center the content horizontally and add vertical spacing */
         padding: 20px; /* Add some internal spacing */
         background-color: #ffffff; /* Optional: Add a background color for contrast */
         border-radius: 8px; /* Add rounded corners */
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
         text-align: center; /* Center text alignment */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media (max-width: 480px) {
+      main {
+          width: 95%; /* Slightly larger on small screens for better fit */
+          padding: 15px;
+      }
+
+      .section p {
+          width: 90%; /* Expands text boxes for better fit */
+          max-width: none; /* Prevents hard width limits */
+          padding: 10px;
+      }
     }
 
     main h1 {
