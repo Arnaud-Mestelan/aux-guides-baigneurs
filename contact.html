@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+      <img src="images/logo.png" alt="Logo">
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="contact.html" class="active">Contact</a>
+  </nav>
+  </header>
+
+    <main>
+        <h1>Contactez-nous par mail ou venez nous rendre visite à la boutique...</h1>
+        <p></p>
+        <div class="email">
+            <!-- Email obscured with JavaScript -->
+            <span id="email"></span>
+        </div>
+    </main>
+
+    <footer>
+    <div class="footer-container">
+        <img src="images/blason-agb.png" alt="Footer Image">
+
+        <div class="footer-text">
+          <p>Boutique</p>
+
+          <p>Aux Guides Baigneurs</p>
+
+          <p>Quai de la Grande Plage 64200 Biarritz.</p>
+
+          <p>De 10h à 20h.</p>
+
+          <hr style="border: 0; border-bottom: 1px solid #ddd; margin: 20px 0;">
+
+          <p>&copy; 2025 Aux-Guides-Baigneurs.com. Tous droits réservés.</p>
+
+          <p>Ce site web n’utilise pas de cookies et ne collecte aucune donnée personnelle.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+        // Obscure email address from bots
+        const user = "info";
+        const domain = "guides-baigneurs.com";
+        const emailElement = document.getElementById("email");
+        emailElement.innerHTML = `<a href="mailto:${user}@${domain}">${user}@${domain}</a>`;
+    </script>
+</body>
+</html>
