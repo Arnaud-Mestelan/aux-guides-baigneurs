@@ -1,7 +1,4 @@
-
-
-
-   /* General styles */
+ /* General styles */
    body {
 
        margin: 0;
@@ -82,9 +79,9 @@
         padding: 20px;
 
         width: 100%; /* Ensures text blocks expand properly */
-  max-width: 600px; /* Prevents them from being too wide */
-  text-align: left; /* Ensures text is aligned correctly */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        max-width: 600px; /* Prevents them from being too wide */
+        text-align: left; /* Ensures text is aligned correctly */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     /* Main content styling for contact page */
@@ -100,42 +97,42 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    @media (max-width: 480px) {
-      main {
-          width: 95%; /* Slightly larger on small screens for better fit */
-          padding: 15px;
       }
 
-      .section p {
-          width: 90%; /* Expands text boxes for better fit */
-          max-width: none; /* Prevents hard width limits */
-          padding: 10px;
+      @media (max-width: 480px) {
+          main {
+              width: 95%; /* Slightly larger on small screens for better fit */
+              padding: 15px;
+          }
+
+          .section p {
+              width: 90%; /* Expands text boxes for better fit */
+              max-width: none; /* Prevents hard width limits */
+              padding: 10px;
+          }
       }
-    }
 
-    main h1 {
-        font-size: 1.0em; /* Adjust heading size */
-        margin-bottom: 20px; /* Add space below the heading */
-        color: #555; /* Match the main text color */
-    }
+      main h1 {
+          font-size: 1.0em; /* Adjust heading size */
+          margin-bottom: 20px; /* Add space below the heading */
+          color: #555; /* Match the main text color */
+      }
 
-    main p {
-        font-size: 1.1em; /* Slightly larger text for readability */
-        margin-bottom: 15px; /* Space between paragraphs */
-    }
+      main p {
+          font-size: 1.1em; /* Slightly larger text for readability */
+          margin-bottom: 15px; /* Space between paragraphs */
+      }
 
-    .email a {
-    color: #007bff; /* Modern blue color */
-    text-decoration: none; /* Remove underline if not needed */
-    font-weight: 400; /* Slightly bold */
-    transition: color 0.3s; /* Smooth transition for hover effect */
-    }
+      .email a {
+      color: #007bff; /* Modern blue color */
+      text-decoration: none; /* Remove underline if not needed */
+      font-weight: 400; /* Slightly bold */
+      transition: color 0.3s; /* Smooth transition for hover effect */
+      }
 
-    .email a:hover {
-        color: red; /* Optional: Change color on hover (for testing or effect) */
-    }
+      .email a:hover {
+          color: red; /* Optional: Change color on hover (for testing or effect) */
+      }
 
 
        /* Footer styles */
